@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summer Camp Course Catalog</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Summer Camp Course Catalog</h1>
+
+    <div class="filter-container">
+        <label for="grade-filter">Filter by Grade:</label>
+        <select id="grade-filter">
+            <option value="all">All Grades</option>
+            <option value="1">Grade 1</option>
+            <option value="2">Grade 2</option>
+            <option value="3">Grade 3</option>
+            <!-- Add more grade options as needed -->
+        </select>
+
+        <label for="strand-filter">Filter by Strand:</label>
+        <select id="strand-filter">
+            <option value="all">All Strands</option>
+            <option value="arts">Arts</option>
+            <option value="sports">Sports</option>
+            <option value="science">Science</option>
+            <!-- Add more strand options as needed -->
+        </select>
+    </div>
+
+    <div class="course-list">
+        <div class="course" data-grade="1" data-strand="arts">
+            <h2>Art Exploration</h2>
+            <p>Grade: 1</p>
+            <p>Strand: Arts</p>
+            <p>Description: This course introduces young artists to various art forms.</p>
+        </div>
+
+        <div class="course" data-grade="2" data-strand="sports">
+            <h2>Soccer Camp</h2>
+            <p>Grade: 2</p>
+            <p>Strand: Sports</p>
+            <p>Description: Learn soccer skills and teamwork in this fun camp.</p>
+        </div>
+
+        <!-- Add more course entries with data attributes for grade and strand -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
