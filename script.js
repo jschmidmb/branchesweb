@@ -1,27 +1,28 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const ageFilter = document.getElementById('grade-filter');
+    const gradeFilter = document.getElementById('grade-filter');
     const strandFilter = document.getElementById('strand-filter');
     const sessionFilter = document.getElementById('session-filter');
     const courseList = document.querySelectorAll('.course');
 
-
-    ageFilter.addEventListener('change', filterCourses);
+    gradeFilter.addEventListener('change', filterCourses);
     strandFilter.addEventListener('change', filterCourses);
     sessionFilter.addEventListener('change', filterCourses);
 
     function filterCourses() {
-        const selectedAge = ageFilter.value;
+        const selectedGrade = gradeFilter.value;
         const selectedStrand = strandFilter.value;
         const selectedSession = sessionFilter.value;
 
         courseList.forEach(course => {
-            const courseAge = course.getAttribute('data-grade');
+            const courseGrade = course.getAttribute('data-grade');
             const courseStrand = course.getAttribute('data-strand');
             const courseSession = course.getAttribute('data-session');
 
-            if ((selectedAge === 'all' || selectedAge === courseAge) &&
-                (selectedStrand === 'all' || selectedStrand === courseStrand)) &&
-                (selectedSession === 'all' || selectedSession === courseSession)) {
+            const gradeMatch = selectedGrade === 'all' || selectedGrade === courseGrade;
+            const strandMatch = selectedStrand === 'all' || selectedStrand === courseStrand;
+            const sessionMatch = selectedSession === 'all' || selectedSession === courseSession;
+
+            if (gradeMatch && strandMatch && sessionMatch) {
                 course.style.display = 'block';
             } else {
                 course.style.display = 'none';

@@ -26,36 +26,35 @@
             <!-- Add more strand options as needed -->
         </select>
 
-        <label for="session-filter">Filter by Strand:</label>
+        <label for="session-filter">Filter by Session:</label>
         <select id="session-filter">
             <option value="all">All Sessions</option>
-            <option value="warm_up_week">Warm Up Week</option>
-            <option value="week_1">Week 1</option>
-            <option value="week_2">Week 2</option>
-            <option value="week_3">Week 3</option>
+            <option value="morning">Morning Session</option>
+            <option value="afternoon">Afternoon Session</option>
             <!-- Add more session options as needed -->
         </select>
     </div>
 
     <div class="course-list">
-        <div class="course" data-grade="1" data-strand="arts" data-session="warm_up_week">
-            <h2>Art Exploration</h2>
+        <div class="course" data-grade="1" data-strand="arts" data-session="morning">
+            <h2>Art Exploration - Morning</h2>
             <p>Grade: 1</p>
             <p>Strand: Arts</p>
-            <p>Description: This course introduces young artists to various art forms.</p>
+            <p>Session: Morning</p>
+            <p>Description: This course introduces young artists to various art forms in the morning session.</p>
         </div>
 
-        <div class="course" data-grade="2" data-strand="sports" data-session="week_2">
-            <h2>Soccer Camp</h2>
+        <div class="course" data-grade="2" data-strand="sports" data-session="afternoon">
+            <h2>Soccer Camp - Afternoon</h2>
             <p>Grade: 2</p>
             <p>Strand: Sports</p>
-            <p>Description: Learn soccer skills and teamwork in this fun camp.</p>
+            <p>Session: Afternoon</p>
+            <p>Description: Learn soccer skills and teamwork in this fun camp in the afternoon session.</p>
         </div>
 
-        <!-- Add more course entries with data attributes for grade and strand -->
+        <!-- Add more course entries with data attributes for grade, strand, and session -->
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
