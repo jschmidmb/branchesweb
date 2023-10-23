@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     const ageFilter = document.getElementById('grade-filter');
     const strandFilter = document.getElementById('strand-filter');
+    const sessionFilter = document.getElementById('session-filter');
     const courseList = document.querySelectorAll('.course');
-    const sessionFilter = document.querySelectorAll('.session');
+
 
     ageFilter.addEventListener('change', filterCourses);
     strandFilter.addEventListener('change', filterCourses);
