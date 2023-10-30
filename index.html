@@ -1,29 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Explorers Course Catalog</title>
-    <link rel="stylesheet" type="text/css" href="https://jschmidmb.github.io/branchesweb/styles.css">
+    <title>Summer Camp Course Catalog</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Explorers Course Catalog</h1>
+    <h1>Summer Camp Course Catalog</h1>
 
     <div class="filter-container">
         <label for="grade-filter">Filter by Grade:</label>
         <select id="grade-filter">
             <option value="all">All Grades</option>
-            <option value="PreK">Pre-Kindergarten</option>
-            <option value="K">Kindergarten</option>
             <option value="1">Grade 1</option>
             <option value="2">Grade 2</option>
+            <option value="3">Grade 3</option>
             <!-- Add more grade options as needed -->
-        </select>
-
-        <label for="session-filter">Filter by Session:</label>
-        <select id="session-filter">
-            <option value="all">All Sessions</option>
-            <option value="warm_up_week">Warm Up Week</option>
-            <option value="week_1">Week 1</option>
-            <!-- Add more session options as needed -->
         </select>
 
         <label for="strand-filter">Filter by Strand:</label>
@@ -35,37 +26,35 @@
             <!-- Add more strand options as needed -->
         </select>
 
- 
+        <label for="session-filter">Filter by Session:</label>
+        <select id="session-filter">
+            <option value="all">All Sessions</option>
+            <option value="morning">Morning Session</option>
+            <option value="afternoon">Afternoon Session</option>
+            <!-- Add more session options as needed -->
+        </select>
     </div>
 
     <div class="course-list">
-        <div class="course" data-grade="K,1,2"  data-strand="travel" data-session="warm_up_week">
-            <h2>Trips & Travel Jr (K-2)</h2>
-            <p>Grade: K-2</p>
-            <p>Strand: Travel</p>
-            <p>Session: Warm Up Week</p>
-            <p>Description:</p>
+        <div class="course" data-grades="1,2" data-strand="arts" data-session="morning">
+            <h2>Art Exploration - Morning</h2>
+            <p>Grades: 1, 2</p>
+            <p>Strand: Arts</p>
+            <p>Session: Morning</p>
+            <p>Description: This course introduces young artists to various art forms in the morning session.</p>
         </div>
 
-        <div class="course" data-grade="4,5,6,7,8" data-strand="travel" data-session="warm_up_week">
-            <h2>Trips & Travel Jr (4-8)</h2>
-            <p>Grade: 4-8</p>
-            <p>Strand: Travel</p>
-            <p>Session: Warm Up Week</p>
-            <p>Description:</p>
-        </div>
-
-        <div class="course" data-grade="2" data-strand="sports" data-session="week_1">
-            <h2>Soccer Camp</h2>
-            <p>Grade: 2</p>
+        <div class="course" data-grades="2,3" data-strand="sports" data-session="afternoon">
+            <h2>Soccer Camp - Afternoon</h2>
+            <p>Grades: 2, 3</p>
             <p>Strand: Sports</p>
             <p>Session: Afternoon</p>
             <p>Description: Learn soccer skills and teamwork in this fun camp in the afternoon session.</p>
         </div>
 
-        <!-- Add more course entries with data attributes for grade, strand, and session -->
+        <!-- Add more course entries with data attributes for grades, strand, and session -->
     </div>
 
-    <script src="https://jschmidmb.github.io/branchesweb/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

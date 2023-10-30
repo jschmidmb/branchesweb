@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const selectedSession = sessionFilter.value;
 
         courseList.forEach(course => {
-            const courseGrade = course.getAttribute('data-grade').split(',').map(grade => grade.trim());
+            const courseGrades = course.getAttribute('data-grades').split(',').map(grade => grade.trim());
             const courseStrand = course.getAttribute('data-strand');
             const courseSession = course.getAttribute('data-session');
 
-            const gradeMatch = selectedGrade === 'all' || selectedGrade.includes(selectedGrade);
+            const gradeMatch = selectedGrade === 'all' || courseGrades.includes(selectedGrade);
             const strandMatch = selectedStrand === 'all' || selectedStrand === courseStrand;
             const sessionMatch = selectedSession === 'all' || selectedSession === courseSession;
 
