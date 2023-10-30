@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const courseStrand = course.getAttribute('data-strand');
             const courseSession = course.getAttribute('data-session');
 
-            const gradeMatch = selectedGrade === 'all' || selectedGrade === courseGrade;
+            const gradeMatch = selectedGrade === 'all' || selectedGrade.includes(selectedGrade);
             const strandMatch = selectedStrand === 'all' || selectedStrand === courseStrand;
             const sessionMatch = selectedSession === 'all' || selectedSession === courseSession;
 
