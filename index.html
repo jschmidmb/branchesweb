@@ -11,6 +11,7 @@
         <label for="grade-filter">Filter by Grade:</label>
         <select id="grade-filter">
             <option value="all">All Grades</option>
+            <option value="K">Kindergarten</option>
             <option value="1">Grade 1</option>
             <option value="2">Grade 2</option>
             <option value="3">Grade 3</option>
@@ -20,7 +21,7 @@
         <label for="strand-filter">Filter by Strand:</label>
         <select id="strand-filter">
             <option value="all">All Strands</option>
-            <option value="arts">Arts</option>
+            <option value="travel">Travel</option>
             <option value="sports">Sports</option>
             <option value="science">Science</option>
             <!-- Add more strand options as needed -->
@@ -29,15 +30,15 @@
         <label for="session-filter">Filter by Session:</label>
         <select id="session-filter">
             <option value="all">All Sessions</option>
-            <option value="morning">Morning Session</option>
+            <option value="warm-up-week">Warm Up Week</option>
             <option value="afternoon">Afternoon Session</option>
             <!-- Add more session options as needed -->
         </select>
     </div>
 
     <div class="course-list">
-        <div class="course" data-grades="1,2" data-strand="arts" data-session="morning">
-            <h2>Art Exploration - Morning</h2>
+        <div class="course" data-grades="K,1,2" data-strand="travel" data-session="warm-up-week">
+            <h2>Trips & Travel Jr (K-2)</h2>
             <p>Grades: 1, 2</p>
             <p>Strand: Arts</p>
             <p>Session: Morning</p>
