@@ -24,7 +24,7 @@ label {
 }
 
 .course-image {
-    flex: 0 0 120px; /* Fixed width for the image container */
+    flex: 0 0 300px; /* Fixed width for the image container */
     margin-right: 20px; /* Spacing between image and text */
 }
 
