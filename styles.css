@@ -28,3 +28,13 @@ label {
 .course p {
     margin: 5px 0;
 }
+
+.course-image {
+    flex: 0 0 120px; /* Fixed width for the image container */
+    margin-right: 20px; /* Spacing between image and text */
+}
+
+.course-image img {
+    max-width: 100%;
+    height: auto;
+}
