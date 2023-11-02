@@ -19,7 +19,7 @@ label {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 20px;
-    display: flex; /* Added to enable side-by-side alignment */
+    /* display: flex;  Added to enable side-by-side alignment */
     align-items: center; /* Center content vertically */
 }
 
