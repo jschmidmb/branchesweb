@@ -18,15 +18,9 @@ label {
 .course {
     border: 1px solid #ccc;
     padding: 10px;
-    margin-bottom: 10px;
-}
-
-.course h2 {
-    margin-top: 0;
-}
-
-.course p {
-    margin: 5px 0;
+    margin-bottom: 20px;
+    display: flex; /* Added to enable side-by-side alignment */
+    align-items: center; /* Center content vertically */
 }
 
 .course-image {
@@ -37,4 +31,16 @@ label {
 .course-image img {
     max-width: 100%;
     height: auto;
+}
+
+.course-details {
+    flex-grow: 1; /* Grow to fill available space */
+}
+
+.course h2 {
+    margin-top: 0;
+}
+
+.course p {
+    margin: 5px 0;
 }
