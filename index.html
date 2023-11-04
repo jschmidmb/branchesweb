@@ -5,13 +5,21 @@
     <link rel="stylesheet" type="text/css" href="https://jschmidmb.github.io/branchesweb/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-// <![CDATA[
- $(document).ready(function() {
-  // Parse your query parameters here, and assign them to a variable named `queryParams`
-  var option = queryParams.type;
-  $("#session-filter").val(option);
- });
- // ]]>
+        // Get the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Get the value of the "session" parameter from the URL
+        const sessionValue = urlParams.get("session");
+
+        // Select the dropdown option with the matching ID
+        if (sessionValue) {
+            const dropdown = document.getElementById("session-filter");
+            const option = document.getElementById(sessionValue);
+
+            if (dropdown && option) {
+                dropdown.value = option.value;
+            }
+        }
 </script>
 </head>
 <body>
